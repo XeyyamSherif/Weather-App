@@ -15,7 +15,7 @@ def index(request):
 
 def add_city(request):
     city = request.POST['city']
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=c34b08cfcf411139cae3c166381d3659'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=APIKEY'
     r = requests.get(url .format(city))
     if r.status_code==404:
         messages.success(request,"Belə şəhər tapılmadı")
@@ -42,7 +42,7 @@ from django import VERSION
 
 
 def index(request):
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid=c34b08cfcf411139cae3c166381d3659'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid=APIKEY'
     # cities = added_cities.objects.order_by('-added_time')
     # all_cities = added_cities.objects.all()
 
