@@ -2,6 +2,5 @@
 
 This is my one of the first project 
 
- - install project 
- - open terminal
- - run this command "manage.py runserver"
+For see this project check this url https://weatherlands.herokuapp.com/
+
